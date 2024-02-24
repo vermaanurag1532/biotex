@@ -1,0 +1,241 @@
+{% extends "base.html" %} {% load static %} {% block title %}Home{% endblock %}
+{%block styles %}
+<link rel="stylesheet" href="{% static 'biotex_app/styles/header.css' %}" />
+<link rel="stylesheet" href={% static 'base/styles/mdb.min.css' %} />
+<link rel="stylesheet" href="{% static 'biotex_app/styles/vision.css' %}" />
+<link rel="stylesheet" href="{% static 'biotex_app/styles/portfolio.css' %}" />
+<link rel="stylesheet" href="{% static 'biotex_app/styles/services.css' %}" />
+<link rel="stylesheet" href="{% static 'biotex_app/styles/target.css' %}" />
+<link rel="stylesheet" href="{% static 'biotex_app/styles/whybiotex.css' %}" />
+<link rel="stylesheet" href="{% static 'biotex_app/styles/career.css' %}" />
+<link rel="stylesheet" href="{% static 'biotex_app/styles/footer.css' %}" />
+<link rel="stylesheet" href={% static 'base/styles/style.css' %} />
+<link rel="stylesheet" href="../../../aos-master/dist/aos.css">
+{%endblock%}
+{% block body %}
+<header class="masthead">
+    <div class="container px-4 px-lg-5 h-100">
+        <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-8">
+                <h1 class="text-white">Welcome</h1>
+                <h3 class="text-white">One Stop Solutions for Lifecare & Regulatory Affairs </h3>
+                <h5 class="text-white">Globally Enhance the Utilisation & Acceptance of Non-Animal Testing Methods</h5>
+                <!-- <hr class="divider" /> -->
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="vision">
+    <div class="visionimg">
+        <img data-aos="fade-down-right" src={% static 'images/vision.jpeg' %} alt="">
+    </div>
+    <div data-aos="fade-down-left" class="content">
+        <h1>Vision</h1>
+        <p>The bioTOX solution is a Biotech Contract Research Organization focused on enhancing life care through in vitro testing methods. They offer comprehensive solutions across the life sciences sector, from concept to market, emphasizing safety, efficacy, and regulatory compliance. Their team of experts ensures innovation thrives alongside stringent regulatory standards. bioTOX is dedicated to non-animal testing, quality services, and advancing the field with their expertise and educational efforts. They invite partners to explore their services and contribute to a healthier future together.</p>
+    </div>
+</div>
+
+<div data-aos="zoom-in" class="gallery container-fluid p-0 mt-5">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src={% static 'images/vision.jpg' %} class="d-block w-100 slider-img-size" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src={% static 'images/vision.jpg' %} class="d-block w-100 slider-img-size" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src={% static 'images/vision.jpg' %} class="d-block w-100 slider-img-size" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src={% static 'images/vision.jpg' %} class="d-block w-100 slider-img-size" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+</div>
+
+
+<div class="services">
+    <h2>WHAT WE DO</h2>
+    <div class="testservices">
+        <div data-aos="fade-down-right" class="testservicesimg">
+            <img src={% static 'images/whatwedo.jpeg' %} alt="">
+        </div>
+        <div data-aos="fade-down-left" class="testservicescontent">
+            <h3>Testing Services</h3>
+            <li>Regulatory Strategy Development</li>
+            <li>Clinical Trial Management</li>
+            <li>Quality Assurance & Compliance</li>
+            <li>Pharmacovigilance/Safety Monitoring</li>
+            <li>Regulatory Writing & Submissions</li>
+            <li>Product Development & Manufacturing Support</li>
+            <li>Other Customized Services</li>
+        </div>
+    </div>
+    <div class="testservices secondservice">
+        <div data-aos="fade-up-right" class="testservicescontent">
+            <h3>Education and Outreach</h3>
+            <li>Practical Methods for In Vitro Toxicology</li>
+            <li>Tailored Webinars</li>
+            <li>Workshops</li>
+            <li>Biotox e-Newsletter</li>
+            <li>Training Videos</li>
+            <li>Biotox drives progress through focused education and empowerment.</li>
+        </div>
+        <div data-aos="fade-up-left" class="testservicesimg">
+            <img src={% static 'images/vision.jpg' %} alt="">
+        </div>
+    </div>
+</div>
+
+
+<div id="portfolio">
+<h1>Portfolio</h1>
+<div class="portfoliocards-row">
+    <div class="portfoliocard-container">
+        <div class="portfoliocard">
+            <div class="card-front">
+                <img src={% static 'images/vision.jpg' %} alt="Image Description">
+            </div>
+            <div class="card-back">
+                <p>Service 1.</p>
+            </div>
+        </div>
+    </div>
+    <div class="portfoliocard-container">
+        <div class="portfoliocard">
+            <div class="card-front">
+                <img src={% static 'images/vision.jpg' %} alt="Image Description">
+            </div>
+            <div class="card-back">
+                <p>Service 2.</p>
+            </div>
+        </div>
+    </div>
+    <div class="portfoliocard-container">
+        <div class="portfoliocard">
+            <div class="card-front">
+                <img src={% static 'images/vision.jpg' %} alt="Image Description">
+            </div>
+            <div class="card-back">
+                <p>Service 3.</p>
+            </div>
+        </div>
+    </div>
+    <div class="portfoliocard-container">
+        <div class="portfoliocard">
+            <div class="card-front">
+                <img src={% static 'images/vision.jpg' %} alt="Image Description">
+            </div>
+            <div class="card-back">
+                <p>Service 4.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Repeat the .card-container three more times for a total of 4 cards -->
+</div>
+</div>
+
+<div class="target">
+    <h1>TARGET INDUSTRIES</h1>
+    <div class="targetcontainer">
+        <div data-aos="zoom-out-right" class="targetimg">
+            <img src={% static 'images/t1 (2).png' %} alt="">
+        </div>
+        <div data-aos="zoom-out-left" class="targetcontent">
+            <h3>TARGET INDUSTRIES</h3>
+            <li>Biotech Startups</li>
+            <li>Academic Institutions</li>
+            <li>Medical Device Manufacturers</li>
+            <li>Contract Manufacturing Organizations (CMOs)</li>
+            <li>Other Life Sciences Organizations</li>
+        </div>
+    </div>
+</div>
+
+
+<div data-aos="zoom-in" class="whybiotex">
+    <h3>Why biotex</h3>
+    <p>Our mission is to propel the field of in-vitro science forward by spearheading the advancement and commercialization of cutting-edge safety testing technologies that are faster, simpler, and more cost-effective.</p>
+    <li>Expertise: Backed by a highly skilled team with extensive industry experience.</li>
+    <li>Comprehensive Solutions: Tailored services for cosmetic products, aroma industry, and home care products.</li>
+    <li>Regulatory Compliance: Deep understanding of complex regulations for safety and compliance.</li>
+    <li>Cutting-Edge Facilities: State-of-the-art technology and equipment for accurate testing.</li>
+    <li>Customer-Centric Approach: Customized solutions aligned with your goals and requirements.</li>
+    <li>Timely Results: Efficient processes for fast and reliable outcomes.</li>
+    <li>Confidentiality and Data Security: Strict measures to protect your sensitive information.</li>
+    <li>Industry Reputation: Established track record of excellence and client satisfaction.</li>
+    <p>Choose BIOTOX for reliable preclinical/clinical/toxicological testing and regulatory support. Contact us today to discuss your needs and benefit from our expertise.</p>
+</div>
+
+
+
+<div class="career">
+    <h1>Career</h1>
+    <div class="careercontainer">
+        <div data-aos="zoom-out-right" class="careercontent">
+            <h3>Career</h3>
+            <p class="career-opportunities">At our CRO, we offer a range of exciting career opportunities in the biotech industry. Our team of experts work on the forefront of toxicology research & developing innovative solutions. We are always looking for talented individuals who are passionate about their work and committed to making a difference in the world. We’re looking for innovative talent to join our team. See all positions and submit your CV.</p>
+            <a href="/career"><button>Opening</button></a>
+        </div>
+        <div data-aos="zoom-out-left" class="careerimg">
+            <img src={% static 'images/c1.png' %} alt="">
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>Our mission is to deliver unparalleled service and products to our customers.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Info</h3>
+            <p>Email: info@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+{% block scripts %}
+<script src="../../../aos-master/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+{% endblock %}
+
+{% endblock %}

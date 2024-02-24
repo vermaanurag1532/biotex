@@ -1,0 +1,50 @@
+.whybiotex {
+    background-color: #f9f9f9; /* Light background to make the text pop */
+    padding: 20px;
+    border-radius: 8px; /* Soften the edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 40px auto; /* Center the container with margin */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font */
+    width: 80%;
+  }
+  
+  .whybiotex h3 {
+    color: #2c3e50; /* Rich, dark color for headings */
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2rem; /* Larger font size for heading */
+    text-align: center; /* Center the heading */
+  }
+  
+  .whybiotex p {
+    color: #666; /* Dark grey for readability */
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 20px; /* Space below paragraphs */
+    text-align: justify; /* Justify text for clean alignment */
+  }
+  
+  .whybiotex ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+  }
+  
+  .whybiotex li {
+    margin-bottom: 10px; /* Space between list items */
+    padding-left: 20px; /* Space for custom bullet */
+    position: relative; /* Needed for custom bullet positioning */
+  }
+  
+  .whybiotex li:before {
+    content: '•'; /* Custom bullet symbol */
+    color: #f9f9f9   ; /* Bullet color that matches the theme */
+    font-size: 1.5rem; /* Larger bullet size */
+    position: absolute;
+    left: 0;
+    top: -2px; /* Adjust vertical alignment of the bullet */
+  }
+  
+  .whybiotex p:last-of-type {
+    text-align: center; /* Center-align the final paragraph for emphasis */
+    font-weight: bold; /* Make the call to action bold */
+    margin-top: 20px; /* Additional space before the call to action */
+  }
+  

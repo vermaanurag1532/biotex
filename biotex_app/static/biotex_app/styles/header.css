@@ -1,0 +1,76 @@
+header.masthead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    width: 100%;
+    height: 60vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/herobox.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+  header.masthead h1, header.masthead .h1 {
+    font-size: 3rem !important;
+  }
+  @media (max-width: 375px) {
+    header.masthead {
+      background-position: right !important;
+      background-attachment: scroll;
+      background-size: cover;
+      min-height: 19rem !important;
+    }
+  }
+  @media (max-width: 400px) {
+    header.masthead {
+      background-position: right;
+      background-attachment: scroll;
+      background-size: cover;
+      padding-top: 9rem;
+      height: 40vh;
+    }
+  }
+  @media (max-width: 450px) {
+    header.masthead {
+      background-position: right;
+      background-attachment: scroll;
+      background-size: cover;
+      padding-top: 10rem;
+      height: 40vh;
+      min-height: 23rem;
+    }
+  }
+  @media (max-width: 500px) {
+    header.masthead {
+      background-position: right;
+      background-attachment: scroll;
+      background-size: cover;
+      padding-top: 9rem;
+      height: 40vh;
+      min-height: 26rem;
+    }
+  }
+    @media (min-width: 992px) {
+    header.masthead {
+      /*height: 55vh;*/
+      min-height: 30rem;
+      padding-top: 4.5rem;
+      padding-bottom: 0;
+    }
+    header.masthead p {
+      font-size: 1.15rem;
+    }
+    header.masthead h1, header.masthead .h1 {
+      font-size: 4rem !important;
+    }
+  }
+  @media (min-width: 1200px) {
+    header.masthead {
+      /*height: 60vh;*/
+      min-height: 30rem;
+      padding-top: 4.5rem;
+      padding-bottom: 0;
+    }
+    header.masthead h1, header.masthead .h1 {
+      font-size: 5rem !important;
+    }
+  }

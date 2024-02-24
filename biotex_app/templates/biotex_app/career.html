@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Career{% endblock %}
+
+{%block styles %}
+<link rel="stylesheet" href="{% static 'biotex_app/styles/opening.css' %}" />
+{% endblock %}
+
+{% block body %}
+<div class="careerhanding">
+    <h1>WE MAKE</h1>
+    <h1>BIG IDEAS HAPPEN</h1>
+    <h3>Join Us for the Ride</h3>
+</div>
+
+<div class="row">
+    {% for opening in career %}
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ opening.name }}</h5>
+          <p class="card-text">{{ opening.description }}</p>
+          <a href="{{ opening.link }}" class="btn btn-primary">Opening</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

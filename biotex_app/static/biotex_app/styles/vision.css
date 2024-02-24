@@ -1,0 +1,53 @@
+.vision {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    gap: 20px; /* Adds space between the image and the content */
+    padding: 20px;
+    background-color: #f0f0f0; /* A light background to contrast with the glow */
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Adds a subtle shadow to the container */
+  }
+  
+  .visionimg img {
+    width: 100%; /* Ensures the image takes the full width of its container */
+    max-width: 600px; /* Limits image size to maintain aspect ratio */
+    height: auto; /* Keeps the image's aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6); /* Adds a glow effect to the image */
+  }
+  
+  .content {
+    max-width: 50%; /* Limits content width */
+    padding: 20px; /* Padding inside the content for spacing */
+    text-align: left; /* Aligns the text to the left */
+    border-radius: 10px; /* Rounded corners for the content */
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background for the content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .content h1 {
+    color: #333; /* Dark color for the heading */
+    margin-bottom: 15px; /* Spacing below the heading */
+  }
+  
+  .content p {
+    color: #666; /* Dark grey for the paragraph text */
+    line-height: 1.6; /* Improved readability */
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+    .vision {
+      flex-direction: column; /* Stacks image and content vertically on smaller screens */
+    }
+  
+    .visionimg, .content {
+      max-width: 100%; /* Allows image and content to fill the container */
+    }
+  }
+  

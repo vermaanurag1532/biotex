@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block meta %}
+    {% endblock %}
+    <title>{% block title %}Incubation Centre{% endblock %}</title>
+    <link rel="stylesheet" href={% static 'base/styles/navbar.css' %} />
+    <link rel="stylesheet" href={% static 'base/styles/footer.css' %} />
+    <link rel="stylesheet" href={% static 'base/styles/styles.css' %} />
+    <link rel="stylesheet" href={% static 'base/styles/bootstrap.css' %} />
+    <link rel="stylesheet" href="../../../aos-master/dist/aos.css">
+    {% block styles %}
+    {% endblock %}
+    <script src="../../../aos-master/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/7cdd666234.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7cdd666234.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5 logo">
+            <img src={% static 'images/Finallogo.jpeg' %} alt="">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#uber">ABOUT US</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#carouselExampleIndicators">ORDINATION</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">SERVICES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/teams">TEAM</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    {% block body %}
+    {% endblock %}
+
+
+    <script>
+        AOS.init();
+    </script>
+    <script src="../../../aos-master/dist/aos.js"></script>
+    <script src={% static 'base/scripts/scripts.js' %}></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    {% block scripts %}
+    {% endblock %}
+</body>
+</html>
